@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const PieDePagina = () => {
   return (
@@ -31,9 +32,11 @@ const PieDePagina = () => {
           <div>
             <h3 className="font-display font-bold text-xl mb-4">Enlaces rápidos</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/" className="hover:text-white transition-colors">Inicio</a></li>
-              <li><span className="cursor-not-allowed">Sobre nosotros</span></li>
-              <li><span className="cursor-not-allowed">Programas</span></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Inicio</Link></li>
+              <li><Link to="/sobre-nosotros" className="hover:text-white transition-colors">Sobre nosotros</Link></li>
+              <li><Link to="/programas" className="hover:text-white transition-colors">Programas</Link></li>
+              <li><Link to="/calendario" className="hover:text-white transition-colors">Calendario</Link></li>
+              <li><Link to="/atletas" className="hover:text-white transition-colors">Atletas</Link></li>
               <li><span className="cursor-not-allowed">Admisiones</span></li>
               <li><span className="cursor-not-allowed">Contacto</span></li>
             </ul>

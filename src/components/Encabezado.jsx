@@ -29,10 +29,18 @@ const Encabezado = () => {
             <Link to="/" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               Inicio
             </Link>
-            <span className="text-gray-400 cursor-not-allowed">Sobre nosotros</span>
-            <span className="text-gray-400 cursor-not-allowed">Programas</span>
-            <span className="text-gray-400 cursor-not-allowed">Calendario</span>
-            <span className="text-gray-400 cursor-not-allowed">Atletas</span>
+            <Link to="/sobre-nosotros" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              Sobre nosotros
+            </Link>
+            <Link to="/programas" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              Programas
+            </Link>
+            <Link to="/calendario" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              Calendario
+            </Link>
+            <Link to="/atletas" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              Atletas
+            </Link>
             <span className="text-gray-400 cursor-not-allowed">Admisiones</span>
             <span className="text-gray-400 cursor-not-allowed">Contacto</span>
           </nav>
@@ -56,10 +64,34 @@ const Encabezado = () => {
             >
               Inicio
             </Link>
-            <span className="block text-gray-400 cursor-not-allowed">Sobre nosotros</span>
-            <span className="block text-gray-400 cursor-not-allowed">Programas</span>
-            <span className="block text-gray-400 cursor-not-allowed">Calendario</span>
-            <span className="block text-gray-400 cursor-not-allowed">Atletas</span>
+            <Link
+              to="/sobre-nosotros"
+              className="block text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              onClick={toggleMenu}
+            >
+              Sobre nosotros
+            </Link>
+            <Link
+              to="/programas"
+              className="block text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              onClick={toggleMenu}
+            >
+              Programas
+            </Link>
+            <Link
+              to="/calendario"
+              className="block text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              onClick={toggleMenu}
+            >
+              Calendario
+            </Link>
+            <Link
+              to="/atletas"
+              className="block text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              onClick={toggleMenu}
+            >
+              Atletas
+            </Link>
             <span className="block text-gray-400 cursor-not-allowed">Admisiones</span>
             <span className="block text-gray-400 cursor-not-allowed">Contacto</span>
           </nav>
