@@ -27,7 +27,7 @@ const Contacto = () => {
       ...prev,
       [name]: value
     }));
-    // Clear error when user starts typing
+    // Limpiar error cuando el usuario empieza a escribir
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -74,11 +74,11 @@ const Contacto = () => {
     const newErrors = validateForm();
     
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, simulate submission
-      console.log('Form submitted:', formData);
+      // Formulario válido, simular envío
+      console.log('Formulario enviado:', formData);
       setIsSubmitted(true);
-      
-      // Reset form after 3 seconds
+
+      // Reiniciar formulario después de 3 segundos
       setTimeout(() => {
         setFormData({
           name: '',
