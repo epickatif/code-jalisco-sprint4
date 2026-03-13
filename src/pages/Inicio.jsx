@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaTrophy, FaGraduationCap, FaUsers, FaChartLine } from 'react-icons/fa';
 
 const Inicio = () => {
@@ -37,12 +38,12 @@ const Inicio = () => {
               CODE Jalisco es el centro de desarrollo deportivo líder en México, donde combinamos excelencia académica con entrenamiento deportivo de alto rendimiento.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary bg-accent-500 hover:bg-accent-600 text-gray-900">
+              <Link to="/sobre-nosotros" className="btn-primary bg-accent-500 hover:bg-accent-600 text-gray-900">
                 Conocer más
-              </button>
-              <button className="btn-outline border-white text-white hover:bg-white hover:text-primary-700">
+              </Link>
+              <Link to="/admisiones" className="btn-outline border-white text-white hover:bg-white hover:text-primary-700">
                 Proceso de admisión
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -110,12 +111,12 @@ const Inicio = () => {
             Únete a la familia de atletas que están transformando su futuro a través del deporte y la educación.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <Link to="/contacto" className="btn-primary">
               Solicitar información
-            </button>
-            <button className="btn-outline">
+            </Link>
+            <Link to="/contacto" className="btn-outline">
               Agendar visita
-            </button>
+            </Link>
           </div>
         </div>
       </section>
