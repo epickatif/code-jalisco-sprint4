@@ -132,7 +132,7 @@ code-jalisco-sprint4/
 - José David Custodio Vega
 
 **Sprint:** 4 de 8
-**Fecha:** Abril 2026
+**Fecha:** Marzo 2026
 
-**URL de producción:** https://code-jalisco-sprint3.vercel.app
+**URL de producción:** https://code-jalisco.vercel.app
 
